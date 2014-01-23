@@ -1,0 +1,38 @@
+html, body, .container, .content {
+    height: 100%;
+}
+ 
+.container, .content {
+    position: relative;
+}
+ 
+.proper-content {
+    padding-top: 40px; /* >= navbar height */
+}
+ 
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -50px; /* same as the footer */
+}
+ 
+.push {
+    height: 50px; /* same as the footer */
+}
+.footer-wrapper {
+    position: relative;
+    height: 50px;
+}
+
+#sketch {
+	border: 10px solid gray;
+	height: 100%;
+	position: relative;
+}
+#tmp_canvas {
+    position: absolute;
+	left: 0px; right: 0;
+	bottom: 0; top: 0;
+	cursor: crosshair;
+}

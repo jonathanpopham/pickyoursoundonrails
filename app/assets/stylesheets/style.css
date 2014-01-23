@@ -1,0 +1,44 @@
+
+
+
+body{
+	margin:0;
+	padding:0;
+}
+
+
+#psybg1 { 
+	background: url(../img/psybg1.jpg) 50% 0 no-repeat fixed; 
+	height: 1000px;  
+	margin: 0 auto; 
+    width: 100%; 
+    max-width: 1920px; 
+    position: relative; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+#psybg2 { 
+	background: url(../psybg2.jpg) 50% 0 no-repeat fixed; 
+	height: 1000px;
+	margin: 0 auto; 
+    width: 100%; 
+    max-width: 1920px; 
+    position: relative; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+#psybg3 { 
+	background: url(../images/psybg3.jpg) 50% 0 no-repeat fixed; 
+	height: 1000px;  
+	margin: 0 auto; 
+    width: 100%; 
+    max-width: 1920px; 
+    position: relative; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+/* Introduction */
+
+#psybg1 article { background: url("../images/intro.png") no-repeat scroll center top transparent; height: 458px; position: absolute; text-indent: -9999px; top: 291px; width: 100%; }
+
+#psybg2 article { background: url("../images/parallax.png") no-repeat scroll center top transparent; height: 458px; position: absolute; text-indent: -9999px; top: 291px; width: 100%; }
+
+#psybg2 article { background: url("../images/parallax.png") no-repeat scroll center top transparent; height: 458px; position: absolute; text-indent: -9999px; top: 291px; width: 100%; }
+
