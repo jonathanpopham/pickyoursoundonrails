@@ -1,0 +1,286 @@
+<!Doctype HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="title" content="Pick Your Sound">
+    <meta name="keywords" content="Custom Guitar Picks, Musical Accessories, Jonathan Popham, Nathan Burnham, Mercer">
+	<meta name="author" content="Jonathan Popham">
+
+	<!-- Le styles -->
+    <link href="./assets/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 20px;
+        padding-bottom: 40px;s
+      }
+
+      /* Custom container */
+      .container-narrow {
+        margin: 0 auto;
+        max-width: 700px;
+      }
+      .container-narrow > hr {
+        margin: 30px 0;
+      }
+
+      /* Main marketing message and sign up button */
+      .jumbotron {
+        margin: 60px 0;
+        text-align: center;
+      }
+      .jumbotron h1 {
+        font-size: 72px;
+        line-height: 1;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+      /* Supporting marketing content */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+    </style>
+    <link href="./assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="./assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!-- TODO these files do not exsist -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href=".assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="./assets/ico/favicon.png">
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+  </head>
+
+  <body style="background-image: url(./assets/img/bk.png);">
+
+    <div class="container-narrow">
+
+      <div class="masthead">
+        <!-- ul class="nav nav-pills pull-right">
+          <li class="active"><a href="./home.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul -->
+        <h3 class="muted">Pick Your Sound</h3>
+      </div>
+
+      <hr>
+
+      <div class="jumbotron">
+	<div id="sketch">
+		<canvas id="paint" width="500" height="500"></canvas>
+	</div> 
+    <p>Pick Height</p>
+    <p>0 in <input type="range" min="0" max="255" id="thicknessrange" value="255"> .031 in or .062 in</p>
+    <p>Pen thickness</p>
+    <p>1 <input type="range" min="1" max="100" id="thicknespen" value="5"> 100</p>
+    <!-- TODO fix this
+    <p>zoom
+    <input type="range" min=".1" max="5" step=".1" id="zoombar" value="3">
+    </p> -->
+
+        <p><a class="btn btn-small" id="downloadpng">Download</a>
+        Upload <input type="file" id="imageLoader" name="imageLoader"/>
+        </p>
+        <p>
+        <form action="https://checkout.google.com/api/checkout/v2/checkoutForm/Merchant/442360366426001" id="BB_BuyButtonForm" method="post" name="BB_BuyButtonForm" target="_top">
+        <table cellpadding="5" cellspacing="0" width="1%">
+            <tr>
+                <td align="right" >
+                    <select name="item_selection_1">
+                        <option value="1">$5.00 - Black delrin (.031" thick) guitar pick</option>
+                        <option value="2">$7.00 - Black delrin (.062" thick) guitar pick</option>
+                        <option value="3">$5.00 - White delrin (.031" thick) guitar pick</option>
+                        <option value="4">$7.00 - White delrin (.062" thick) guitar pick</option>
+                    </select>
+                    <input name="item_option_name_1" type="hidden" value="Black delrin (.031 in) guitar pick"/>
+                    <input name="item_option_price_1" type="hidden" value="5.0"/>
+                    <input name="item_option_description_1" type="hidden" value="Baby my Darling, that's one thin pick! Subtle and Dark, I Like it!"/>
+                    <input name="item_option_quantity_1" type="hidden" value="1"/>
+                    <input name="item_option_currency_1" type="hidden" value="USD"/>
+                    <input name="item_option_name_2" type="hidden" value="Black delrin (.062 in) guitar pick"/>
+                    <input name="item_option_price_2" type="hidden" value="7.0"/>
+                    <input name="item_option_description_2" type="hidden" value="I'll finally get Mama Who Bore me down on my Acoustic now that I can get those strings isolated! Dark too!"/>
+                    <input name="item_option_quantity_2" type="hidden" value="1"/>
+                    <input name="item_option_currency_2" type="hidden" value="USD"/>
+                    <input name="item_option_name_3" type="hidden" value="White delrin (.031 in) guitar pick"/>
+                    <input name="item_option_price_3" type="hidden" value="5.0"/>
+                    <input name="item_option_description_3" type="hidden" value="I can really see the likeness in this picture, it almost burned through though. I can basically see through it"/>
+                    <input name="item_option_quantity_3" type="hidden" value="1"/>
+                    <input name="item_option_currency_3" type="hidden" value="USD"/>
+                    <input name="item_option_name_4" type="hidden" value="White delrin (.062 in) guitar pick"/>
+                    <input name="item_option_price_4" type="hidden" value="7.0"/>
+                    <input name="item_option_description_4" type="hidden" value="Fine details and solid picking! on the medium thickness end, especially after being etched! Medium depth etches, for sure."/>
+                    <input name="item_option_quantity_4" type="hidden" value="1"/>
+                    <input name="item_option_currency_4" type="hidden" value="USD"/>
+                    <input type="hidden" id="imagedata" name="shopping-cart.item-options.items.item-1.merchant-private-item-data" value="unattached">
+                </td>
+                <td align="left" width="1%">
+                    <input alt="" src="https://checkout.google.com/buttons/buy.gif?merchant_id=442360366426001&amp;w=117&amp;h=48&amp;style=white&amp;variant=text&amp;loc=en_US" type="image"/>
+                </td>
+            </tr>
+        </table>
+        </form>
+
+        </p>
+      </div>
+      <hr>
+
+      <div class="row-fluid marketing">
+        <div class="span6">
+          <h4>How its made</h4>
+          <p>We laser cut your design into an awesome guitar pick. We use an Epilog 50 watt engraver.</p>
+
+          <h4>It is made of Delrin</h4>
+          <p>Delrin is an excellent guitar pick material. it is very strong and can be felxible when thin</p>
+
+          <h4>Drawing tips</h4>
+          <p>Try not to use anything much lower than .020 thickness. The thinnest part of your guitar pick generally determines the whole thickness. Also feel free to download it and edit it in your favorite editor to get ultimate precision.</p>
+        </div>
+
+        <div class="span6">
+          <h4>Service</h4>
+          <p>If you have any questions we would love to answer any questions or just chat about guitar pick design. (nathan@planetaryremedy.net)</p>
+
+          <h4>Free Shipping</h4>
+          <p>We include all of the costs to build and mail you your pick.</p>
+
+          <h4>You are pretty cool</h4>
+          <p>If you are here taking time to draw a sweet-awesome guitar pick then we love you.</p>
+
+          
+        </div>
+      </div>  
+        <h4>Where does your money go? <FONT COLOR="#CCCCCC">(for the 0.031 in pick)</Font></h4>
+          <script type="text/javascript" src="//ajax.googleapis.com/ajax/static/modules/gviz/1.0/chart.js"> {"dataSourceUrl":"//docs.google.com/spreadsheet/tq?key=0AmLts5RHkvG9dEgzZmVldE05V1ZFaUwxN3JhcVFQeGc&transpose=0&headers=0&range=B2%3AC12&gid=0&pub=1","options":{"titleTextStyle":{"bold":true,"color":"#000","fontSize":16},"animation":{"duration":500},"colors":["#3366CC","#DC3912","#FF9900","#109618","#990099","#0099C6","#DD4477","#66AA00","#B82E2E","#316395","#994499","#22AA99","#AAAA11","#6633CC","#E67300","#8B0707","#651067","#329262","#5574A6","#3B3EAC","#B77322","#16D620","#B91383","#F4359E","#9C5935","#A9C413","#2A778D","#668D1C","#BEA413","#0C5922","#743411"],"theme":"maximized","width":"100%","is3D":true,"hAxis":{"useFormatFromData":true,"minValue":null,"viewWindow":{"min":null,"max":null},"maxValue":null},"vAxes":[{"useFormatFromData":true,"minValue":null,"viewWindow":{"min":null,"max":null},"maxValue":null},{"useFormatFromData":true,"minValue":null,"viewWindow":{"min":null,"max":null},"maxValue":null}],"pieHole":"0","title":"","booleanRole":"certainty","pieSliceBorderColor":"#efefef","height":266,"legend":"right","pieSliceTextStyle":{"color":"#f3f3f3"},"tooltip":{}},"state":{},"view":{},"isDefaultVisualization":true,"chartType":"PieChart","chartName":"Chart 1"} </script>
+      
+
+      <hr>
+
+      <div class="footer">
+        <p>© Planetary Remedy, LLC 2013</p>
+      </div>
+
+    </div> <!-- /container -->
+    
+    <!-- Le javascript -->
+    <!-- ================================================== -->
+    <script class="cssdeck">
+        (function() {
+            var canvas = document.querySelector('#paint');
+        	var ctx = canvas.getContext('2d');
+        	
+        	var sketch = document.querySelector('#sketch');
+        	var sketch_style = getComputedStyle(sketch);
+        	canvas.width = parseInt(sketch_style.getPropertyValue('width'));
+        	canvas.height = parseInt(sketch_style.getPropertyValue('height'));
+            
+            var imageLoader = document.getElementById('imageLoader');
+            imageLoader.addEventListener('change', handleImage, false);
+            
+        	var mouse = {x: 0, y: 0};
+        	
+            var checkoutdata = document.querySelector('#imagedata');
+            
+        	/* Mouse Capturing Work */
+        	canvas.addEventListener('mousemove', function(e) {
+        		mouse.x = e.pageX - this.offsetLeft;
+        		mouse.y = e.pageY - this.offsetTop;
+        	}, false);
+        	
+        	/* Drawing on Paint App */
+        	ctx.lineWidth = 5;
+        	ctx.lineJoin = 'round';
+        	ctx.lineCap = 'round';
+        	ctx.strokeStyle = 'black';
+        	 
+            
+        	canvas.addEventListener('mousedown', function(e) {
+        			ctx.beginPath();
+        			ctx.moveTo(mouse.x, mouse.y);
+        	 
+        			canvas.addEventListener('mousemove', onPaint, false);
+        	}, false);
+        	 
+        	canvas.addEventListener('mouseup', function() {
+        			canvas.removeEventListener('mousemove', onPaint, false);
+                    checkoutdata.value = canvas.toDataURL('png');
+        	}, false);
+            
+        	/// todo http://paperjs.org/examples/smoothing/
+        	var onPaint = function() {
+                    var athickslide = document.querySelector('#thicknessrange');
+            		var athickpen = document.querySelector('#thicknespen');
+            		var adepthishpen = parseInt(athickpen.value); 
+        		    var adepthish = 255 - parseInt(athickslide.value);
+                    ctx.strokeStyle =  "#"+adepthish.toString(16)+adepthish.toString(16)+adepthish.toString(16);
+        			ctx.lineWidth = adepthishpen;
+        			ctx.lineTo(mouse.x, mouse.y);
+        			ctx.stroke();
+        	};
+        	
+            var pngdown = document.querySelector('#downloadpng');
+            pngdown.onclick = function()
+                {
+                     window.open(canvas.toDataURL('png'));    
+                }
+           
+            function handleImage(e){
+                var reader = new FileReader();
+                reader.onload = function(event){
+                    var img = new Image();
+                    img.onload = function(){
+                        canvas.width = img.width;
+                        canvas.height = img.height;
+                        ctx.drawImage(img,0,0);
+                    }
+                    img.src = event.target.result;
+                }
+                reader.readAsDataURL(e.target.files[0]);     
+            }
+            
+            
+            var imageObj = new Image();
+
+            imageObj.onload = function() {
+              canvas.width = imageObj.width;
+              canvas.height = imageObj.height;
+              ctx.drawImage(imageObj, 0, 0);
+            };
+            imageObj.src = 'assets/img/samplesrealsize.png';
+            
+        }());
+    </script>
+    <!-- Placed at the end of the document so the pages load faster --//>
+    
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/bootstrap-transition.js"></script>
+    <script src="./assets/js/bootstrap-alert.js"></script>
+    <script src="./assets/js/bootstrap-modal.js"></script>
+    <script src="./assets/js/bootstrap-dropdown.js"></script>
+    <script src="./assets/js/bootstrap-scrollspy.js"></script>
+    <script src="./assets/js/bootstrap-tab.js"></script>
+    <script src="./assets/js/bootstrap-tooltip.js"></script>
+    <script src="./assets/js/bootstrap-popover.js"></script>
+    <script src="./assets/js/bootstrap-button.js"></script>
+    <script src="./assets/js/bootstrap-collapse.js"></script>
+    <script src="./assets/js/bootstrap-carousel.js"></script>
+    <script src="./assets/js/bootstrap-typeahead.js"></script>
+    <!-- Convinient cooment -->
+  
+
+
+</body></html>
